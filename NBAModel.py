@@ -1,4 +1,5 @@
 import json
+import config
 import numpy as np
 import pandas as pd
 from pandas import concat
@@ -10,11 +11,11 @@ from sklearn.metrics import mean_squared_error
 
 #API URL and Key
 api_url = 'https://api.balldontlie.io/v1/stats'
-api_key = '186fc42d-3d46-40f4-8323-d6c59b3bb63a'
+api_key = config.api_key
 
 #Defining Headers and parameters
 headers = {
-    'Authorization' : '186fc42d-3d46-40f4-8323-d6c59b3bb63a'
+    'Authorization' : api_key
 }
 payload= {'seasons[]' : '2023', 'player_ids[]' : '22', 'start_date':'2023-10-24', 'end_date':'2024-04-04', 'per_page':'100'}
 
