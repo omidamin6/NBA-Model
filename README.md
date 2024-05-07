@@ -1,7 +1,7 @@
 # NBA-Model
 This project seeks to predict nba players's statistical outputs in the categories of points, rebounds, and assists, by using a forcasting regression model. 
 
-The data is comes in the form of a JSON, where a specific player is specified, and all of that player's games played so far during this NBA season are returned, as well as relevant statistics and information such as points scored, shots taken, field goal %, and opponent played amongst many others. 
+The data comes in the form of a JSON from an api call, where a specific player is specified, and all of that player's games played so far during this NBA season are returned, as well as relevant statistics and information such as points scored, shots taken, field goal %, and opponent played amongst many others. 
 
 Some preprocessing was done, by altering the JSON file to be put into a dataframe, and creating new columns in the dataframe to hold lagged values for points, assists, and rebounds in order to perform a time series analysis. Additionally rows containing missing values were dropped. 
 
